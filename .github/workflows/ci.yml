@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: Employee Laravel Workflow
+    name: Employee Workflow
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
