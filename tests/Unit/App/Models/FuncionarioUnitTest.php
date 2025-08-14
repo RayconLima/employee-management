@@ -2,8 +2,8 @@
 
 namespace Tests\Unit\App\Models;
 
-use App\Models\Funcionario;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Funcionario;
 use Tests\TestCase;
 
 class FuncionarioUnitTest extends TestCase
@@ -20,7 +20,8 @@ class FuncionarioUnitTest extends TestCase
             'nome',
             'sobrenome',
             'data_de_nascimento',
-            'salario'
+            'salario',
+            'cargo_id'
         ];
         $loja = new funcionario();
         $this->assertEquals($fillable, $loja->getFillable());

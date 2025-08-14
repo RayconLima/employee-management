@@ -15,7 +15,8 @@ class Funcionario extends Model
         'nome',
         'sobrenome',
         'data_de_nascimento',
-        'salario'
+        'salario',
+        'cargo_id'
     ];
 
     protected $casts    = [
@@ -24,7 +25,7 @@ class Funcionario extends Model
 
     public function cargo()
     {
-        return $this->belongsTo(Cargo::class, 'cargo', 'id');
+        return $this->belongsTo(Cargo::class, 'id');
     }
 
     public function getSalarioAttribute($numero): string

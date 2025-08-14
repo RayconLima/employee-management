@@ -18,6 +18,6 @@ class Cargo extends Model
 
     public function funcionarios()
     {
-        return $this->hasMany(Funcionario::class, 'cargo', 'id');
+        return $this->hasMany(Funcionario::class, 'id');
     }
 }
