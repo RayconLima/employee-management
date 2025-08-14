@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: Loja Laravel Workflow
+    name: Employee Laravel Workflow
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -32,4 +32,4 @@ jobs:
           php artisan key:generate
 
       - name: Run PHPUnit tests
-        run: ./vendor/bin/phpunit
+        run: ./vendor/bin/phpunit --coverage-clover=coverage.xml
