@@ -2,7 +2,6 @@
 
 namespace Tests\Feature\Models;
 
-//use App\Models\Loja;
 use App\Models\{Cargo, Funcionario};
 use Tests\TestCase;
 

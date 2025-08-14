@@ -2,8 +2,8 @@
 
 namespace Tests\Unit\App\Models;
 
-use App\Models\Funcionario;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Funcionario;
 use Tests\TestCase;
 
 class FuncionarioUnitTest extends TestCase

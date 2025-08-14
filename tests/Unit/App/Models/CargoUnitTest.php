@@ -2,9 +2,8 @@
 
 namespace Tests\Unit\App\Models;
 
-use App\Models\Cargo;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\SoftDeletes;
+use App\Models\Cargo;
 use Tests\TestCase;
 
 class CargoUnitTest extends TestCase
