@@ -20,7 +20,8 @@ class FuncionarioUnitTest extends TestCase
             'nome',
             'sobrenome',
             'data_de_nascimento',
-            'salario'
+            'salario',
+            'cargo_id'
         ];
         $loja = new funcionario();
         $this->assertEquals($fillable, $loja->getFillable());

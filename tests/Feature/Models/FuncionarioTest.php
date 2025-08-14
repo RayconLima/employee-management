@@ -20,7 +20,7 @@ class FuncionarioTest extends TestCase
         $funcionario                        = new Funcionario();
         $funcionario->nome                  = 'Rodrigo';
         $funcionario->sobrenome             = 'Faro';
-        $funcionario->cargo                 = $cargo->id;
+        $funcionario->cargo_id              = $cargo->id;
         $funcionario->data_de_nascimento    = '1994-10-15';
         $funcionario->salario               = 1000;
         $funcionario->save();
@@ -73,7 +73,7 @@ class FuncionarioTest extends TestCase
 
         $this->assertEqualsCanonicalizing(
             [
-                'cargo',
+                'cargo_id',
                 'created_at',
                 'data_de_nascimento',
                 'id',

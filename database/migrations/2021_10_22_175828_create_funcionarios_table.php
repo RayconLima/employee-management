@@ -17,12 +17,12 @@ class CreateFuncionariosTable extends Migration
             $table->id();
             $table->string('nome');
             $table->string('sobrenome');
-            $table->unsignedBigInteger('cargo');
+            $table->unsignedBigInteger('cargo_id');
             $table->date('data_de_nascimento');
             $table->integer('salario');
             $table->timestamps();
 
-            $table->foreign('cargo')->references('id')->on('cargos');
+            $table->foreign('cargo_id')->references('id')->on('cargos');
         });
     }
 
